@@ -18,6 +18,49 @@
 
 \section*{Aufgabe 3.3}
 
+\subsection*{1.}
+Es sind \(L(A_1)=((a+c)b)^*\),\\ \(L(A_2)=((a+c)b^*(a+c)a^*b)^*((a+c)b^*(a+c)a^*)^+\),\\ 
+	\(L^\omega(A_1)=((a+c)b)^\omega\) und \\
+	\(L^\omega(A_2)=(((a+c)b^*(a+c))a^\omega+((a+c)b^*(a+c)a^*b)^\omega\)).\\
+	
+\subsection*{2.}	
+	Per Konstruktion nach Satz 1.8 ergibt sich:\\
+	\(Q=\{(q_0,z_0),(q_0,z_1),(q_0,z_2),(q_1,z_0),(q_1,z_1),(q_1,z_2)\}, Q^0=\{(q_0,z_0)\}, \\
+	F=\{(q_0,z_2)\} \) und 
+	\((q_0,z_0)\underrightarrow{a,c}(q_1,z_1), (q_0,z_1)\underrightarrow{a,c}(q_1,z_2), (q_0,z_2)\underrightarrow{a}(q_1,z_2),\\
+	(q_1,z_1)\underrightarrow{b}(q_0,z_1), (q_1,z_2)\underrightarrow{b}(q_0,z_0)\) \\ 
+	\\
+	Daraus ergibt sich folgender Automat \(A_3\): \\
+	\begin {figure}[h]
+  		\centering \includegraphics[width=0.5\textwidth]{A3}
+	\end {figure}
+	
+\subsection*{3.}	
+	Es sind \(L(A_3)=\emptyset\) und \(L^\omega(A_3)=\emptyset\),
+	da der Endzustand \((q_0,z_2)\) nicht erreichbar ist.\\
+	Es gilt \(L(A_3)=L(A_1)\cap L(A_2)\) und 
+	\(L^\omega(A_3)\neq L^\omega(A_1)\cap L^\omega(A_2)=L^\omega(A_1)\).
+	
+\subsection*{4.}	
+	Mit der Konstruktion nach Satz 1.21 ergibt sich:\\
+	\(Q=\{(q_0,z_0,1),(q_0,z_0,2),(q_0,z_1,1),(q_0,z_1,2),(q_1,z_1,1),(q_1,z_1,2),(q_1,z_2,1),\\(q_1,z_2,2)\}\) 
+	(es werden nur die initialen Zusammenhangskomponenten von \(A_3\) betrachtet),
+	\(Q^0=\{(q_0,z_0,1)\}, F=\{(q_0,z_0,1),(q_0,z_1,1\} \) und \\
+	\((q_0,z_0,1)\underrightarrow{a,c}(q_1,z_1,2),(q_0,z_0,2)\underrightarrow{a,c}(q_1,z_1,2),
+	(q_0,z_1,1)\underrightarrow{a,c}(q_1,z_2,2),\\(q_0,z_1,2)\underrightarrow{a,c}(q_1,z_2,2),
+	(q_1,z_1,1)\underrightarrow{b}(q_0,z_1,1), (q_1,z_1,2)\underrightarrow{b}(q_0,z_1,2),\\
+	(q_1,z_2,1)\underrightarrow{b}(q_0,z_0,1),(q_1,z_2,2)\underrightarrow{b}(q_0,z_0,1)\).\\
+	\\
+	Daraus ergibt sich folgender Automat \(A_4\): \\
+	\begin {figure}[h]
+  		\centering \includegraphics[width=0.6\textwidth]{A4}
+	\end {figure}
+	
+\subsection*{5.}
+	Es sind \(L(A_4)=((a+c)b(a+c)b)^*\) und \(L^\omega(A_4)=((a+c)b)^\omega\).
+	Es ist \(L(A_1)\cap L(A_2)=\emptyset \neq L(A_4)\) und
+	\(L^\omega(A_4) = L^\omega(A_1)\cap L^\omega(A_2)\).
+
 \section*{Aufgabe 3.4}
 
 \end{document}
