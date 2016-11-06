@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.6)  6 NOV 2016 15:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.6)  6 NOV 2016 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -352,6 +352,10 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 \l@austrian = a dialect from \language\l@german 
 Package babel Info: Making " an active character on input line 110.
 )))
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup4
+)
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/03 v2.15a AMS math features
 \@mathmargin=\skip43
@@ -415,8 +419,8 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
@@ -495,18 +499,18 @@ LaTeX Warning: Unused global option(s):
 (./G-1-A-03-Goettsch_Hoelzen_Schmidt.aux)
 \openout1 = `G-1-A-03-Goettsch_Hoelzen_Schmidt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 \c@lstlisting=\count109
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -570,27 +574,32 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 18.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+LaTeX Font Info:    Try loading font information for U+msb on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 22--25
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
 
  []
 
 <A3.pdf, id=1, 307.1475pt x 286.06876pt>
 File: A3.pdf Graphic file (type pdf)
  <use A3.pdf>
-Package pdftex.def Info: A3.pdf used on input line 35.
+Package pdftex.def Info: A3.pdf used on input line 36.
 (pdftex.def)             Requested size: 195.0pt x 181.62108pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--37
+Underfull \hbox (badness 10000) in paragraph at lines 28--38
 
  []
 
@@ -600,10 +609,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <A4.pdf, id=2, 429.605pt x 199.74625pt>
 File: A4.pdf Graphic file (type pdf)
  <use A4.pdf>
-Package pdftex.def Info: A4.pdf used on input line 56.
+Package pdftex.def Info: A4.pdf used on input line 57.
 (pdftex.def)             Requested size: 234.00238pt x 108.80011pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--58
+Underfull \hbox (badness 10000) in paragraph at lines 46--59
 
  []
 
@@ -616,29 +625,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2 <./A3.pdf> <./A4.pdf>] [3] (./G-1-A-03-Goettsch_Hoelzen_Schmidt.aux) ) 
+[2 <./A3.pdf> <./A4.pdf>]
+Overfull \hbox (106.64252pt too wide) detected at line 88
+[][] \OT1/cmr/m/n/12 = []
+ []
+
+
+Overfull \hbox (99.37872pt too wide) detected at line 98
+[][] \OT1/cmr/m/n/12 = []
+ []
+
+[3] [4] (./G-1-A-03-Goettsch_Hoelzen_Schmidt.aux) ) 
 Here is how much of TeX's memory you used:
- 4646 strings out of 493029
- 60616 string characters out of 6136235
- 140132 words of memory out of 5000000
- 8108 multiletter control sequences out of 15000+600000
- 12448 words of font info for 48 fonts, out of 8000000 for 9000
+ 4679 strings out of 493029
+ 61246 string characters out of 6136235
+ 140240 words of memory out of 5000000
+ 8129 multiletter control sequences out of 15000+600000
+ 14247 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,14n,43p,266b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb>
-Output written on G-1-A-03-Goettsch_Hoelzen_Schmidt.pdf (3 pages, 151286 bytes)
+ 37i,14n,43p,374b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on G-1-A-03-Goettsch_Hoelzen_Schmidt.pdf (4 pages, 162156 bytes)
 .
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
