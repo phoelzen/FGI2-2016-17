@@ -8,6 +8,8 @@
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 
+\setlength{\parindent}{0pt}
+
 \author{Mareike Göttsch, 6695217, Gruppe 2\\Paul Hölzen, 6673477, Gruppe 1\\Sven Schmidt, 6217064, Gruppe 1}
 
 \title{FGI 2 Hausaufgaben 4}
@@ -20,17 +22,41 @@
 \section*{Aufgabe 4.3}
 
 \subsection*{1.}
+$L(TS_{Enterprise}) = ((du) + (l(kp^*bw)^*e))^*$\\
+$L^\omega(TS_{Enterprise}) = ((du) + (l(kp^*bw)^*e))^\omega$\\
 
 \subsection*{2.}
+$SS(M_{Enterprise}) = ((01) + (02(3^*42)^*))^\omega$\\
 
 \subsection*{3.}
+Seien die Etiketten von $M_{Enterprise}$:\\
+$E_S(s_0) = \{orbit\}$\\
+$E_S(s_1) = \{away, orbit\}$\\
+$E_S(s_2) = \{warp\}$\\
+$E_S(s_3) = \{shields\}$\\
+$E_S(s_4) = \emptyset$\\
+
+Die Etikettensprache ist dann durch Einsetzen in die Menge aller Pfade (4.3.2):\\
+\begin{align*}
+E_S(SS(M_{Enterprise})) &= E_S(((01) + (02(3^*42)^*))^\omega)\\
+&= ((E_S(s_0)E_S(s_1)) + (E_S(s_0)E_S(s_2)(E_S(s_3)^*E_S(s_4)E_S(s_2))^*))^\omega\\
+&= ((\{orbit\}\{away, orbit\}) + (\{orbit\}\{warp\}(\{shields\}^*\emptyset\{warp\})^*))^\omega
+\end{align*}
 
 \subsection*{4.}
+$Sat(shields) = \{s_3\}$\\
+$Sat(\neg orbit) = \{s_2, s_3, s_4\}$\\
+$Sat(warp) = \{s_2\}$\\
+
+Die Formel bedeutet: ``Folgendes gilt immer: Wenn die Schilde aktiv sind, dann wird, wenn sie im nächsten Schritt deaktiviert werden, irgendwann einmal der Warp eingeschaltet.''\\
+
+Die Formel gilt im Anfangszustand $s_0$. (Hier Beweis einfügen...)\\
 
 \subsection*{5.}
+Mehr Beweise...\\
 
-\section*{4.4}
+\section*{Aufgabe 4.4}
 
-\section*{4.5}
+\section*{Aufgabe 4.5}
 
 \end{document}
