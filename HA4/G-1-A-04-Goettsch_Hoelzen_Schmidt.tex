@@ -50,7 +50,10 @@ $Sat(warp) = \{s_2\}$\\
 
 Die Formel bedeutet: ``Folgendes gilt immer: Wenn die Schilde aktiv sind, dann wird, wenn sie im nächsten Schritt deaktiviert werden, irgendwann einmal der Warp eingeschaltet.''\\
 
-Die Formel gilt im Anfangszustand $s_0$. (Hier Beweis einfügen...)\\
+Beweis:\\
+Die Formel $f$ macht eine Aussage, die zu jedem Zeitpunkt gelten soll. Die Prämisse der in diesen $G$-Operator geschachtelten Implikation ist $shields$. Da diese atomare Aussage nur im Zustand $s_3$ wahr ist, gilt die Implikation in jedem anderen Zustand, der zuvor besucht wird.\\
+Sobald, das erste Mal $s_3$ besucht wird, sagt die erste Implikation aus, dass nun die Teilformel $(X \neg shields) \Rightarrow F warp$ gilt. Sprich, wenn im nächsten Schritt $\neg shields$ gilt, dann gilt $F warp$. Bleibt man im Zustand $s_3$ indem man die Kante $p$ benutzt, so gilt die Prämisse nicht und die Formel ist erfüllt. Nimmt man die Kante zu $s_4$ ist die Prämisse erfüllt und da die einzige Möglichkeit weiterzumachen die Kante zu Zustand $s_2$ ist, in dem $warp$ gilt, ist auch die Konklusion erfüllt.\\
+Die Formel gilt also im Startzustand $s_0$, da oben beschriebene Zustandsfolge unendlich oft durchlaufen werden kann und somit auch der $G$-Operator erfüllt ist.\\
 
 \subsection*{5.}
 Mehr Beweise...\\
