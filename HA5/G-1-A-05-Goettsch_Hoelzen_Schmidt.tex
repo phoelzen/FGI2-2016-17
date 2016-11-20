@@ -82,10 +82,9 @@ Es gilt also: \[Sat(g_{2})=Sat(\mathbf{E}(True\mathbf{U}(\neg \mathbf{E}(True\ma
 Es zeigt sich, dass $g_{1}$ auf ganz M gültig ist während $g_{2}$ auf ganz M nicht gilt.
 Dies ist auch nicht verwunderlich, denn bereits aus der natürlich-sprachlichen Beschreibung für $g_{1}$ und $g_{2}$ lässt sich die Gültigkeit der beiden Formeln intuitiv ableiten.
 
-
 \section*{Aufgabe 5.4}
 \subsection*{1.}
-Die Transitionssysteme $R_1, R_2$ und $R_3$ mit $hi, vi \in A_i$ für alle Systeme und $AP = \{closed, fetched\}$ wobei $closed$ den Zustand beschreibt, den ein Roboter hat der gerade eine Dose verschlossen hat und $fetched$ bedeutet, dass ein Roboter einen Deckel geholt hat.\\
+Die Transitionssysteme $R_1, R_2$ und $R_3$ mit $a_i = (h_i, v_i)$ und $b_i = (v_i, h_i)$ für $(h_i, v_i), (v_i, h_i) \in S_i \times S_i$ für alle Systeme und $AP = \{h1, v1, h2, v2, h3, v3\}$ wobei $v_i$ den Zustand beschreibt, den ein Roboter hat der gerade eine Dose verschließt und $h_i$ bedeutet, dass ein Roboter einen Deckel holt.\\
 
 \begin{figure}[h!]
 \centering
@@ -94,7 +93,7 @@ Die Transitionssysteme $R_1, R_2$ und $R_3$ mit $hi, vi \in A_i$ für alle Syste
 \end{figure}
 
 \subsection*{2.}
-Das Produkttransitionssystem $R_1 \oplus R_2 \oplus R_3$ mit der Synchronisationsrelation $Sync = \{(h1, v2, h3), (v1, h2, v3)\}$.\\
+Das Produkttransitionssystem $R_1 \oplus R_2 \oplus R_3$ mit der Synchronisationsrelation $Sync = \{(a_1, b_2, a_3), (b_1, a_2, b_3)\}$.\\
 
 \begin{figure}[h!]
 \centering
@@ -103,6 +102,26 @@ Das Produkttransitionssystem $R_1 \oplus R_2 \oplus R_3$ mit der Synchronisation
 \end{figure}
 
 \subsection*{3.}
+Zuerst bilden wir die Formel $\neg \Phi$:
+\begin{align*}
+\neg \Phi &= \neg (G \neg ((v_1 \wedge v_2) \vee (v_3 \wedge v_2)))\\
+&= F \neg \neg ((v_1 \wedge v_2) \vee (v_3 \wedge v_2))\\
+&= F ((v_1 \wedge v_2) \vee (v_3 \wedge v_2))
+\end{align*}
 
+Ein Büchi-Automat $M_{\neg\Phi}$, für den diese Formel gilt wäre:\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{notphibuechi.pdf}
+\caption{$M_{\neg\Phi}$}
+\end{figure}
+
+Die Schnittmenge der beiden Sprachen ist:\\
+\begin{align*}
+&L^\omega(R_1 \oplus R_2 \oplus R_3) = ([h_1, v_2, h_3] [v_1, h_2, v_3])^\omega\\
+&L^\omega(M_{\neg\Phi}) = ([h_1, h_2, h_3] [v_1, v_2, v_3])^\omega\\
+&L^\omega(R_1 \oplus R_2 \oplus R_3) \cap L^\omega(M_{\neg\Phi}) = \emptyset
+\end{align*}
 
 \end{document}
