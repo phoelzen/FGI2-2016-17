@@ -19,11 +19,62 @@
 \begin{document}
 \maketitle
 
-\section*{Aufgabe 5.3}
+section*{Aufgabe 5.3}
 \subsection*{1.}
+\subsubsection*{(a)}
+\begin{align*}
+f &= \mathbf{AF}(\neg( orbit \Rightarrow away)) \land \neg\mathbf{AG}( \mathbf{E}( orbit\mathbf{U}warp)) \\ &=  \mathbf{AF}(\neg(\neg orbit\lor away))\land\neg\neg \mathbf{EF}(\neg \mathbf{E}(orbit\mathbf{U}warp)) \\ &= \neg \mathbf{EG}(\neg orbit\lor away)\land \mathbf{E}(True\mathbf{U}(\neg \mathbf{E}(orbit\mathbf{U}warp)))
+\end{align*}
+\subsubsection*{(b)}
+\begin{align*}
+g_{1} &= \mathbf{AGEF}(warp) \\ &= \neg \mathbf{EF}(\neg\mathbf{EF}(warp)) \\ &= \neg\mathbf{E}(True\mathbf{U}(\neg\mathbf{E}(True\mathbf{U}warp)))
+\end{align*}
+\begin{align*}
+g_{2} &= \mathbf{EFAG}(warp) \\ &=\mathbf{E}(True\mathbf{U}(\neg \mathbf{EF}(\neg warp))) \\
+&= \mathbf{E}(True\mathbf{U}(\neg \mathbf{E}(True\mathbf{U}\neg warp)))
+\end{align*}
+
 \subsection*{2.}
+Eine natürlich-sprachliche Beschreibung für $f$ wäre:
+\begin{quote}
+	Es gibt keinen Pfad auf dem immer 'away' oder nicht 'orbit' gilt und es gibt einen Pfad, auf dem irgendwann kein Pfad existiert, auf welchem solange 'orbit' gültig ist bis 'warp' gilt.
+\end{quote}
+Eine natürlich-sprachliche Beschreibung für $g_{1}$ wäre:
+\begin{quote}
+	Auf allen Pfaden gibt es immer einen Pfad auf dem irgendwann 'warp' gilt.
+\end{quote}
+Eine natürlich-sprachliche Beschreibung für $g_{2}$ wäre:
+\begin{quote}
+	Es gibt einen Pfad auf dem irgendwann auf allen Pfaden immer 'warp' gilt.
+\end{quote}
+
 \subsection*{3.}
-\subsection*{4.}
+\begin{align*}
+Sat(f) &= Sat(\neg \mathbf{EG}(\neg orbit\lor away)\land \mathbf{E}(True\mathbf{U}(\neg \mathbf{E}(orbit\mathbf{U}warp)))) \\ &= Sat(\neg \mathbf{EG}(\neg orbit\lor away)) \cap Sat(\mathbf{E}(True\mathbf{U}(\neg \mathbf{E}(orbit\mathbf{U}warp))))
+\end{align*}
+Es gilt $Sat(\neg orbit)=\{2,3,4\}$ und $Sat(away)=\{1\}$.\\
+Daraus folgt $Sat(\neg orbit \lor away)=\{2,3,4\} \cup \{1\} = \{1,2,3,4\}$.\\
+Da $SZK_{1}=\{3\}$ und $SZK_{2}= \{2,3,4\}$ die einzigen SZKs von $\neg orbit \lor away$ sind gilt: $Sat( \mathbf{EG}(\neg orbit\lor away))=T=\{2,3,4\}$
+Daraus folgt dann wiederum: \[Sat(\neg \mathbf{EG}(\neg orbit\lor away))=\{0,1\}  \]
+Für den zweiten Teil der Und-Verknüpfung gilt $Sat(warp)=\{2\}$. Daraus folgt durch schrittweises Einsetzten in Gegenrichtung:\[ Sat(\mathbf{E}(orbit\mathbf{U}warp))=\{0,1\} \]
+Somit gilt $Sat(\neg \mathbf{E}(orbit\mathbf{U}warp))=\{2,3,4\}$. \\
+Da diese Zustände von allen anderen Zuständen erreichbar sind folgt daraus \[Sat(\mathbf{E}(True\mathbf{U}(\neg \mathbf{E}(orbit\mathbf{U}warp))))=\{0,1,2,3,4\}  \]
+Für $Sat(f)$ folgt daraus schließlich:\[ Sat(f)= \{0,1\} \cap \{0,1,2,3,4\} = \{0,1\} \]
+\\
+
+Für $g_{1}$ gilt, da $Sat(warp)=\{2\}$ und $s_{2}$ von allen Zuständen erreichbar ist, dass $Sat(\mathbf{E}(True\mathbf{U}warp))=\{0,1,2,3,4\}$.\\
+Demnach ist $Sat(\neg\mathbf{E}(True\mathbf{U}warp))=\emptyset$ woraus wiederum folgt, dass \[Sat(\mathbf{E}(True\mathbf{U}(\neg\mathbf{E}(True\mathbf{U}warp))))=\emptyset\]
+Es gilt daher für $Sat(g_{1})$:\[Sat(g_{1})=Sat(\neg\mathbf{E}(True\mathbf{U}(\neg\mathbf{E}(True\mathbf{U}warp))))=\{0,1,2,3,4\}\]
+\\
+Für $g_{2}$ gilt entsprechend:
+\begin{align*}
+&Sat(\neg warp)=\{0,1,3,4\} \Rightarrow Sat(\mathbf{E}(True\mathbf{U}\neg warp))=\{0,1,2,3,4\} \\
+	\Rightarrow& Sat(\neg\mathbf{E}(True\mathbf{U}\neg warp))=\emptyset \Rightarrow Sat(\mathbf{E}(True\mathbf{U}(\neg \mathbf{E}(True\mathbf{U}\neg warp))))=\emptyset
+\end{align*}
+Es gilt also: \[Sat(g_{2})=Sat(\mathbf{E}(True\mathbf{U}(\neg \mathbf{E}(True\mathbf{U}\neg warp))))=\emptyset\]
+\subsubsection*{4.}
+Es zeigt sich, dass $g_{1}$ auf ganz M gültig ist während $g_{2}$ auf ganz M nicht gilt.
+Dies ist auch nicht verwunderlich, denn bereits aus der natürlich-sprachlichen Beschreibung für $g_{1}$ und $g_{2}$ lässt sich die Gültigkeit der beiden Formeln intuitiv ableiten.
 
 \section*{Aufgabe 5.4}
 
