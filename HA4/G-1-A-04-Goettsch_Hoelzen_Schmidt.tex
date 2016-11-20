@@ -59,6 +59,60 @@ Die Formel gilt also im Startzustand $s_0$, da oben beschriebene Zustandsfolge u
 Mehr Beweise...\\
 
 \section*{Aufgabe 4.4}
+Gegeben ist ein unendlicher Zustandspfad $\pi$aus der Menge $010\left(23^{4}4\right)^{\omega}$.
+
+Die zu dem Pfad gehörende Zustandsetikettenfunktion lautet demnach\\
+\begin{align*}
+ES\left(\pi\right)=&\left\{ \neg a,o,\neg s,\neg w\right\} \left\{ a,o,\neg s,\neg w\right\} \left\{ \neg a,o,\neg s,\neg w\right\} \\
+ & \left(\left\{ \neg a,\neg o,\neg s,w\right\} \left\{ \neg a,\neg o,s,\neg w\right\} ^{4}\left\{ \neg a,\neg o,\neg s,\neg w\right\} \right)^{\omega},
+  \end{align*}
+\\
+wobei $a,o,s,w$ Abkürzungen für die Zustandsetiketten $\underline{a}way,\underline{o}rbit,\underline{s}hields,\underline{w}arp$
+sind.\\
+
+\begin{tabular}{|c|c|c|}
+	\hline 
+	$f$ & $M_{Enterprise}\models f$ & $M_{Enterprise},\pi\models f$\tabularnewline
+	\hline 
+	\hline 
+	$\lozenge\square\left(w\lor s\right)$ & 0 & 0\tabularnewline
+	\hline 
+	$\square\lozenge\left(w\lor s\right)$ & 0 & 1\tabularnewline
+	\hline 
+	$\square\left(s\Rightarrow\left(sU\left(\Circle w\right)\right)\right)$ & 0 & 0\tabularnewline
+	\hline 
+	$\square\left(o\Rightarrow\Circle\Circle w\right)$ & 0 & 0\tabularnewline
+	\hline 
+	$\square\left(\left(\lnot o\land\lnot s\land\lnot w\land\Circle\Circle\lnot o\right)\Rightarrow\lozenge s\right)$ & 1 & 1\tabularnewline
+	\hline 
+	$\Circle\Circle\Circle\lozenge\left(o\land\lnot w\right)$ & 0 & 0\tabularnewline
+	\hline 
+\end{tabular}
+\\
+\\
+Grundsaätzlich gilt: $\left(M_{Enterprise}\models f\right)\Rightarrow\left(M_{Enterprise},\pi\models f\right)$,
+denn ist eine Funktion für alle Pfade gültig so auch für einen bestimmten.
+\begin{enumerate}
+	\item Die erste Formel kann natürlichsprachlich durch ``Irgendwann gilt
+	immer warp oder shield'' ausgedrückt werden. Da sich auf dem gegebenen
+	Pfad $\pi$ die Zustandsetiketten $\left\{ \neg a,\neg o,\neg s,\neg w\right\} $
+	unendlich oft wiederholen ist diese Aussage allerdings falsch.
+	\item ``Es gilt immer irgendwann warp oder shield''. Diese Aussge wird
+	durch die unendlich Wiederholung von $\left\{ \neg a,\neg o,\neg s,w\right\} ,\left\{ \neg a,\neg o,s,\neg w\right\} $
+	für den Pfad $\pi$ gültig. Auf einem zweiten Pfad $\varPi=s_{0}s_{1}s_{0}s_{1}...$
+	gilt die Aussage allerdings nicht daher istsie auch nicht auf ganz
+	$M$ gültig.
+	\item Gilt nicht auf $\pi$ da nach $\left\{ \neg a,\neg o,s,\neg w\right\} ^{4}\left\{ \neg a,\neg o,\neg s,\neg w\right\} $
+	``shields'' nicht gilt bis warp wahr ist, sondern vorher bereits
+	ungültig ist.
+	\item Nach $\left\{ \neg a,o,\neg s,\neg w\right\} \left\{ a,o,\neg s,\neg w\right\} \left\{ \neg a,o,\neg s,\neg w\right\} $
+	beginnt der Pfad mit der Aussage ``orbit'' ist aber zwei Zustände
+	später nicht bei der Aussage ``warp''
+	\item Diese Aussage gilt für alle Pfade, da die lange Und-Verknüpfung nur
+	dann wahr werden kann, wenn der Pfad die sequenz $\varPi=...s_{4}s_{2}s_{3}...$
+	enthält. Dann gian entsprechender Stelle aber auch ``irgendwann shields''.
+	\item Nach drei Transitionen gilt niemals wieder die Aussage ``orbit''.
+	Die Funktion ist daher nicht gültig auf dem Pfad $\pi.$\end{enumerate}
 
 \section*{Aufgabe 4.5}
 
