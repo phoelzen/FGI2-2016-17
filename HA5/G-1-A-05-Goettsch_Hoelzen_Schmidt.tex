@@ -19,7 +19,7 @@
 \begin{document}
 \maketitle
 
-section*{Aufgabe 5.3}
+\section*{Aufgabe 5.3}
 \subsection*{1.}
 \subsubsection*{(a)}
 \begin{align*}
@@ -76,6 +76,27 @@ Es gilt also: \[Sat(g_{2})=Sat(\mathbf{E}(True\mathbf{U}(\neg \mathbf{E}(True\ma
 Es zeigt sich, dass $g_{1}$ auf ganz M gültig ist während $g_{2}$ auf ganz M nicht gilt.
 Dies ist auch nicht verwunderlich, denn bereits aus der natürlich-sprachlichen Beschreibung für $g_{1}$ und $g_{2}$ lässt sich die Gültigkeit der beiden Formeln intuitiv ableiten.
 
+\newpage
 \section*{Aufgabe 5.4}
+\subsection*{1.}
+Die Transitionssysteme $R_1, R_2$ und $R_3$ mit $hi, vi \in A_i$ für alle Systeme und $AP = \{closed, fetched\}$ wobei $closed$ den Zustand beschreibt, den ein Roboter hat der gerade eine Dose verschlossen hat und $fetched$ bedeutet, dass ein Roboter einen Deckel geholt hat.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{r1r2r3.pdf}
+\caption{Transitionssysteme $R_1, R_2$ und $R_3$}
+\end{figure}
+
+\subsection*{2.}
+Das Produkttransitionssystem $R_1 \oplus R_2 \oplus R_3$ mit der Synchronisationsrelation $Sync = \{(h1, v2, h3), (v1, h2, v3)\}$.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{r1r2r3_prod.pdf}
+\caption{$R_1 \oplus R_2 \oplus R_3$}
+\end{figure}
+
+\subsection*{3.}
+
 
 \end{document}
