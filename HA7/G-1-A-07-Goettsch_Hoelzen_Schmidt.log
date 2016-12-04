@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.6)  4 DEC 2016 18:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.6)  4 DEC 2016 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -652,137 +652,129 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 93.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 [3 <./reversible.pdf> <./Erreichbarkeitsgraph7-3-5.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
 <7-5-1.pdf, id=27, 538.01pt x 104.39pt>
 File: 7-5-1.pdf Graphic file (type pdf)
  <use 7-5-1.pdf>
-Package pdftex.def Info: 7-5-1.pdf used on input line 97.
+Package pdftex.def Info: 7-5-1.pdf used on input line 114.
 (pdftex.def)             Requested size: 376.60443pt x 73.07248pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-
- []
-
-<7-5-2.pdf, id=28, 500.87125pt x 251.94125pt>
-File: 7-5-2.pdf Graphic file (type pdf)
- <use 7-5-2.pdf>
-Package pdftex.def Info: 7-5-2.pdf used on input line 108.
-(pdftex.def)             Requested size: 350.60747pt x 176.35767pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
 [4 <./7-5-1.pdf>]
-Overfull \hbox (24.13278pt too wide) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+<7-5-2.pdf, id=32, 500.87125pt x 251.94125pt>
+File: 7-5-2.pdf Graphic file (type pdf)
+ <use 7-5-2.pdf>
+Package pdftex.def Info: 7-5-2.pdf used on input line 125.
+(pdftex.def)             Requested size: 350.60747pt x 176.35767pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+[5 <./7-5-2.pdf>]
+Overfull \hbox (24.13278pt too wide) in paragraph at lines 132--133
 \OT1/cmr/m/n/12 dass die Tran-si-ti-on $\OML/cmm/m/it/12 t[]$ \OT1/cmr/m/n/12 M
 ar-ken ge-ne-riert. Au-^^Yer-dem bleibt auch die R[]ucksetzbarkeit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
-<7-5-3.pdf, id=33, 534.99875pt x 334.24875pt>
+<7-5-3.pdf, id=37, 534.99875pt x 334.24875pt>
 File: 7-5-3.pdf Graphic file (type pdf)
  <use 7-5-3.pdf>
-Package pdftex.def Info: 7-5-3.pdf used on input line 119.
+Package pdftex.def Info: 7-5-3.pdf used on input line 136.
 (pdftex.def)             Requested size: 374.49657pt x 233.97252pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5 <./7-5-2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+ [6 <./7-5-3.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 
-Overfull \hbox (15.2249pt too wide) in paragraph at lines 127--128
+Overfull \hbox (15.2249pt too wide) in paragraph at lines 144--145
 []\OT1/cmr/m/n/12 Das Netz be-sitzt wei-ter-hin Ne-benl[]aufigkeit, Le-ben-dig-
 keit und Un-be-schr[]anktheit,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-<7-5-4.pdf, id=38, 558.085pt x 407.5225pt>
+<7-5-4.pdf, id=42, 558.085pt x 407.5225pt>
 File: 7-5-4.pdf Graphic file (type pdf)
  <use 7-5-4.pdf>
-Package pdftex.def Info: 7-5-4.pdf used on input line 131.
+Package pdftex.def Info: 7-5-4.pdf used on input line 148.
 (pdftex.def)             Requested size: 390.65685pt x 285.2638pt.
 
-Overfull \hbox (0.65685pt too wide) in paragraph at lines 131--132
+Overfull \hbox (0.65685pt too wide) in paragraph at lines 148--149
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6 <./7-5-3.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+[7 <./7-5-4.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-<7-5-5.pdf, id=43, 557.08125pt x 463.7325pt>
+<7-5-5.pdf, id=48, 557.08125pt x 463.7325pt>
 File: 7-5-5.pdf Graphic file (type pdf)
  <use 7-5-5.pdf>
-Package pdftex.def Info: 7-5-5.pdf used on input line 143.
-(pdftex.def)             Requested size: 389.95422pt x 324.61052pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7 <./7-5-4.pdf>] [8 <./7-5-5.pdf>] (./G-1-A-07-Goettsch_Hoelzen_Schmidt.aux) )
- 
+Package pdftex.def Info: 7-5-5.pdf used on input line 160.
+(pdftex.def)             Requested size: 350.96304pt x 292.15302pt.
+ [8 <./7-5-5.pdf>]
+[9] (./G-1-A-07-Goettsch_Hoelzen_Schmidt.aux) ) 
 Here is how much of TeX's memory you used:
- 4702 strings out of 493029
- 61823 string characters out of 6136235
+ 4721 strings out of 493029
+ 62136 string characters out of 6136235
  135240 words of memory out of 5000000
- 8149 multiletter control sequences out of 15000+600000
- 13438 words of font info for 54 fonts, out of 8000000 for 9000
+ 8164 multiletter control sequences out of 15000+600000
+ 13785 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,14n,43p,850b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb>
-Output written on G-1-A-07-Goettsch_Hoelzen_Schmidt.pdf (8 pages, 524280 bytes)
+</usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on G-1-A-07-Goettsch_Hoelzen_Schmidt.pdf (9 pages, 536995 bytes)
 .
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 90 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
