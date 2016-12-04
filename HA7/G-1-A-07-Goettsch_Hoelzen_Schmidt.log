@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.6)  4 DEC 2016 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.5.6)  4 DEC 2016 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -651,13 +651,56 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] [3 <./reversible.pdf> <./Erreichbarkeitsgraph7-3-5.pdf>]
+[2] <7-5-1.pdf, id=22, 511.9125pt x 105.39375pt>
+File: 7-5-1.pdf Graphic file (type pdf)
+ <use 7-5-1.pdf>
+Package pdftex.def Info: 7-5-1.pdf used on input line 95.
+(pdftex.def)             Requested size: 358.3363pt x 73.7751pt.
+
+<7-5-2.pdf, id=23, 482.80376pt x 251.94125pt>
+File: 7-5-2.pdf Graphic file (type pdf)
+ <use 7-5-2.pdf>
+Package pdftex.def Info: 7-5-2.pdf used on input line 101.
+(pdftex.def)             Requested size: 337.96033pt x 176.35767pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<7-5-3.pdf, id=24, 508.90125pt x 321.2pt>
+File: 7-5-3.pdf Graphic file (type pdf)
+ <use 7-5-3.pdf>
+Package pdftex.def Info: 7-5-3.pdf used on input line 107.
+(pdftex.def)             Requested size: 356.22844pt x 224.83847pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<7-5-4.pdf, id=25, 532.99126pt x 383.4325pt>
+File: 7-5-4.pdf Graphic file (type pdf)
+ <use 7-5-4.pdf>
+Package pdftex.def Info: 7-5-4.pdf used on input line 113.
+(pdftex.def)             Requested size: 293.1461pt x 210.88852pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<7-5-5.pdf, id=26, 532.99126pt x 441.65pt>
+File: 7-5-5.pdf Graphic file (type pdf)
+ <use 7-5-5.pdf>
+Package pdftex.def Info: 7-5-5.pdf used on input line 119.
+(pdftex.def)             Requested size: 293.1461pt x 242.90823pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./reversible.pdf> <./Erreichbarkeitsgraph7-3-5.pdf> <./7-5-1.pdf>] [4 <./7-
+5-2.pdf> <./7-5-3.pdf>] [5 <./7-5-4.pdf> <./7-5-5.pdf>]
 (./G-1-A-07-Goettsch_Hoelzen_Schmidt.aux) ) 
 Here is how much of TeX's memory you used:
- 4677 strings out of 493029
- 61503 string characters out of 6136235
+ 4702 strings out of 493029
+ 61823 string characters out of 6136235
  135240 words of memory out of 5000000
- 8129 multiletter control sequences out of 15000+600000
+ 8149 multiletter control sequences out of 15000+600000
  13438 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,14n,43p,429b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -670,11 +713,11 @@ onts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on G-1-A-07-Goettsch_Hoelzen_Schmidt.pdf (3 pages, 218079 bytes)
+Output written on G-1-A-07-Goettsch_Hoelzen_Schmidt.pdf (5 pages, 493396 bytes)
 .
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
