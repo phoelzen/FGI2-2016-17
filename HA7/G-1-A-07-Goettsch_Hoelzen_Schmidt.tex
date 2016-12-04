@@ -88,7 +88,9 @@ Das Netz besitzt außerdem noch die beiden Eigenschaften Lebendigkeit und Verkle
 \newpage
 \section*{Aufgabe 7.5}
 \subsection*{1.}
-Der erste und gröbste Aufbau der Autoproduktion ist in Abbildung 4 zu sehen. Dabei modelliert die Transition $t_1$ Aufträge, die von Großabnehmern aufgegeben werden. Transition $t_2$ stellt den Mitarbeiter dar, der die Aufträge in ein Fach legt.
+Der erste und gröbste Aufbau der Autoproduktion ist in Abbildung 4 zu sehen. Dabei modelliert die Transition $t_1$ Aufträge, die von Großabnehmern aufgegeben werden und als Marken auf einen Platz gelegt werden. Transition $t_2$ stellt den Mitarbeiter dar, der die Aufträge in ein Fach legt, $t_3$ den Mitarbeiter, der die Aufträge an den Lieferanten weitergibt, der durch $t_4$ modelliert ist. Der Lieferant liefert Material für 100 PKWs in ein Lager, repräsentiert durch 100 Marken, die auf einen Platz gelegt werden. Die Transition $t_5$ symbolisiert den Fertigungsprozess und legt fertige Autos in Form von Marken auf einen Platz, der wiederum als Lager dient, aus dem der Spediteur dann immer 100 Wagen auf einmal abholt.\\
+
+Das Netz ist nebenläufig, da die Transition $t_1$ immer und unabhängig von allen anderen schalten kann. Es ist außerdem lebendig, da $t_1$ immer mehr Marken erzeugen kann und damit eine Schaltfolge existiert, mit der alle Transitionen geschaltet werden können. Das Netz ist deterministisch in dem Sinne, dass das Schalten einer Transition nur ein mögliches Ergebnis hat und es für eine einzelne Marke (bei einmaligem Schalten von $t_1$) genau eine Schaltfolge $t_1t_2t_3t_4t_5t_6$ gibt, bei der alle Transitionen einmal geschaltet werden. Das Netz ist unbeschränkt, da mit wiederholtem Schalten von $t_1$ beliebig viele Marken generiert werden können, dennoch ist es rücksetzbar, da mit der Transition $t_6$ alle Marken wieder vernichtet werden können, sodass die Startmarkierung entsteht.\\
 
 \begin{figure}[h!]
 \centering
@@ -96,11 +98,21 @@ Der erste und gröbste Aufbau der Autoproduktion ist in Abbildung 4 zu sehen. Da
 \caption{Autofertigung Stufe 1}
 \end{figure}
 
+\subsection*{2.}
+Im nächsten Verfeinerungsschritt wird der Fertigungsprozess detaillierter modelliert. Dabei ist der vordere Teil des in Abbildung 5 abgebildeten Netzes identisch zum vorherigen, wobei die Transition $t_5$ in zwei Transitionen unterteilt wurde. Die erste der beiden $t_5$ verteilt die Resourcen auf die Arbeitsplätze, wobei vier Marken stellvertretend für vier Reifen auf einen Platz gelegt werden, zwei Marken für zwei Achsen auf einen anderen und jeweils eine Marke für einen Motor und ein Lenkrad auf zwei Plätze. Die Transition $t_6$ modelliert die Montagelinie in der alle Resourcen genommen werden und ein fertiges Produkt in Form einer einzelnen Marke in das Lager gelegt wird.\\
+
+Dieses Netz ist ebenfalls nebenläufig, lebendig und unbeschränkt. Die Argumentation ist dabei die gleiche wie im ersten Schritt. Es ist außerdem auch rücksetzbar, da jede erzeugte Marke auch wieder vernichtet werden kann und so die Startmarkierung wiederherstellbar ist. Die Marken von $t_4$ in $t_7$ und die Marken die von $t_5$ erzeugt werden, werden direkt von $t_6$ wieder entfernt.\\
+
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.7]{7-5-2.pdf}
 \caption{Autofertigung Stufe 2}
 \end{figure}
+
+\subsection*{3.}
+Die nächste Stufe ist in Abbildung 6 zu sehen. Hier ist eine noch kleinschrittigere Modellierung der Produktion gefordert. Der Aufbau ähnelt zu großen Teilen dem des vorherigen Netzes, wobei die Transition $t_6$ in vier einzelne Transitionen geteilt wurde, die die Roboter der Produktionslinie darstellen. Dabei nimmt der erste Roboter $t_6$ zwei Marken (Achsen) von dem Platz, verarbeitet diese und legt sie auf das Fließband, das durch die blauen Plätze modelliert wird. Die vier Plätze veranschaulichen dabei die räumliche Trennung bzw. das Weiterfahren des Bandes. Hier kann $t_7$ nur schalten, wenn $t_6$ ein Teil fertig montiert hat, $t_8$ ist von $t_7$ abhängig und $t_9$ von $t_8$.\\
+
+Das Netz bleibt weiterhin nebenläufig, lebendig und unbeschränkt, dadurch dass die Transition $t_1$ Marken generiert. Außerdem bleibt auch die Rücksetzbarkeit erhalten, da auch in diesem Netz alle Marken, die erzeugt werden, wieder vernichtet werden können.\\
 
 \begin{figure}[h!]
 \centering
@@ -108,15 +120,27 @@ Der erste und gröbste Aufbau der Autoproduktion ist in Abbildung 4 zu sehen. Da
 \caption{Autofertigung Stufe 3}
 \end{figure}
 
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.55]{7-5-4.pdf}
-\caption{Autofertigung Stufe 4}
-\end{figure}
+\newpage
+\subsection*{4.}
+Stufe 4 der Verfeinerung des Netzes führt eine zweite Montagelinie ein. Diese ist durch eine Kopie des entsprechenden Teilnetzes realisiert und in Abbildung 7 zu sehen. Dabei werden die Marken (Resourcen) aus dem gleichen Lager entnommen und die fertigen Produkte in das gleiche Lager gelegt. Die beiden Linien arbeiten voneinander unabhängig.\\
+
+Das Netz besitzt weiterhin Nebenläufigkeit, Lebendigkeit und Unbeschränktheit, sowie Rücksetzbarkeit. Der Determinismus geht jedoch verloren, da die Transitionen $t_5$ und $t_10$ willkürlich geschaltet werden können.\\
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.55]{7-5-5.pdf}
+\includegraphics[scale=0.7]{7-5-4.pdf}
+\caption{Autofertigung Stufe 4}
+\end{figure}
+
+\newpage
+\subsection*{5.}
+Zum Schluss wird noch ein Konto in das Modell eingeführt, modelliert durch den gelben Platz in Abbildung 8. Er enthält ein Startkapital von 100 Marken, was genau dem Preis für 100 Wagen entspricht, der vom Lieferanten bzw. Transition $t_4$ getilgt wird. Der Spediteur zahlt beim Abholen von 100 PKWs aus dem Lager 200 Marken auf das Konto ein, sodass pro abgeschlossener Bestellung 100 Marken auf dem gelben Platz generiert werden.\\
+
+Das Netz ist nebenläufig, und unbeschränkt, da $t_1$ Marken generiert. Es ist außerdem lebendig, da durch $t_15$ immer genug Marken für die Aktivierung von $t_4$ erzeugt werden können. Es ist weiterhin nicht deterministisch. Die Rücksetzbarkeit des Netzes geht verloren, da auf dem gelben Platz immer mehr Marken generiert werden als vernichtet werden können.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{7-5-5.pdf}
 \caption{Autofertigung Stufe 5}
 \end{figure}
 
