@@ -1,0 +1,46 @@
+\documentclass[12pt, paper=a4]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+\setlength{\parindent}{0pt}
+
+\author{Mareike G\"ottsch, 6695217, Gruppe 2\\Paul H\"olzen, 6673477, Gruppe 1\\Sven Schmidt, 6217064, Gruppe 1}
+
+\title{FGI 2 Hausaufgaben 8}
+
+\rhead{M. G\"ottsch, G-2; P. H\"olzen, G-1; S. Schmidt, G-1}
+\pagestyle{fancy}
+\begin{document}
+\maketitle
+\section*{8.3}
+\begin{figure}[h!]
+	\includegraphics*[scale = 0.7]{Erreichbarkeitsgraph_8_3.pdf}
+	\caption{Erreichbarkeitsgraph zu $N_{8.3}$}
+\end{figure}
+\subsection*{1.}
+Wie man in Abbildung 1 sehen kann ist der  Erreichbarkeitsgraph beschränkt, woraus sofort folgt, dass das Netz $N_{8.3}$ ebenfalls beschränkt ist.\\
+Man kann weiterhin erkennen, dass der Erreichbarkeitsgraph nicht verklemmungsfrei ist. Daraus folgt, dass das Netz weder lebendig noch reversibel ist, da es eine Markierung gibt in der keine Transition schalten kann.
+\subsection*{2.}
+Das Netz ist strukturell lebendig, da in der Anfangsmarkierung $m_{0}$ alle Transitionen lebendig sind.\\
+Das Netz ist strukturell beschränkt, da in dem Netz keine Transition existiert die eine Marke generiert oder eine Marke vernichtet. Die Anzahl der Marken in dem Netz bleibt folglich stets konstant. Es gibt daher auch keine Markierung, für die das Netz unbeschränkt wäre.\\
+Das Netz ist nicht fair, weil es Markierungen gibt die unendlich oft aktivierbar sein können, ohne jemals zu schalten. Ein Beispiel dafür wäre die Transition $t_{4}$.
+\subsection*{3.}
+\begin{figure*}[h!]
+	\includegraphics*[scale = 0.7]{Erster_Prozess_8_3.pdf}
+	\caption{Erster Prozess}
+\end{figure*} 
+\begin{figure*}[h!]
+	\includegraphics*[scale = 0.7]{Zweiter_Prozess_8_3.pdf}
+	\caption{Zweiter Prozess}
+\end{figure*} 
+
+\subsection*{4.}
+Mehr Text
+
+\end{document}
