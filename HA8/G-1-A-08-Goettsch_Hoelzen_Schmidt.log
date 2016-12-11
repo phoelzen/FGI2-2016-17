@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.5)  11 DEC 2016 22:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.5)  11 DEC 2016 22:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -501,29 +501,65 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: 8_4errg.pdf Graphic file (type pdf)
  <use 8_4errg.pdf>
 Package pdftex.def Info: 8_4errg.pdf used on input line 33.
-(pdftex.def)             Requested size: 309.90706pt x 134.7531pt.
- [1
+(pdftex.def)             Requested size: 433.87744pt x 188.65762pt.
+
+Overfull \hbox (43.87744pt too wide) in paragraph at lines 33--34
+ [][] 
+ []
+
+
+Overfull \hbox (5.08249pt too wide) in paragraph at lines 37--38
+[]\OT1/cmr/m/n/12 Davon aus-ge-hend wur-den die star-ken Zu-sam-men-hangs-kom-p
+o-nen-ten $\OML/cmm/m/it/12 C[]; C[]; C[]$
+ []
+
+<8_4SZK.pdf, id=2, 1264.725pt x 587.19376pt>
+File: 8_4SZK.pdf Graphic file (type pdf)
+ <use 8_4SZK.pdf>
+Package pdftex.def Info: 8_4SZK.pdf used on input line 41.
+(pdftex.def)             Requested size: 442.66039pt x 205.52089pt.
+
+Overfull \hbox (52.66039pt too wide) in paragraph at lines 41--42
+ [][] 
+ []
+
+[1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./8_4er
-rg.pdf>]
-(./G-1-A-08-Goettsch_Hoelzen_Schmidt.aux) ) 
-Here is how much of TeX's memory you used:
- 4536 strings out of 493089
- 60695 string characters out of 6134843
- 126990 words of memory out of 5000000
- 7948 multiletter control sequences out of 15000+600000
- 8245 words of font info for 33 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 37i,7n,43p,266b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on G-1-A-08-Goettsch_Hoelzen_Schmidt.pdf (1 page, 272325 bytes).
+rg.pdf>] <8_4RGc.pdf, id=12, 572.1375pt x 329.23pt>
+File: 8_4RGc.pdf Graphic file (type pdf)
+ <use 8_4RGc.pdf>
+Package pdftex.def Info: 8_4RGc.pdf used on input line 51.
+(pdftex.def)             Requested size: 228.85094pt x 131.68965pt.
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2 <./8_4SZK.pdf> <./8_4RGc.pdf>] [3] (./G-1-A-08-Goettsch_Hoelzen_Schmidt.aux)
+ ) 
+Here is how much of TeX's memory you used:
+ 4576 strings out of 493089
+ 61152 string characters out of 6134843
+ 127990 words of memory out of 5000000
+ 7977 multiletter control sequences out of 15000+600000
+ 13438 words of font info for 54 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 37i,11n,43p,266b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on G-1-A-08-Goettsch_Hoelzen_Schmidt.pdf (3 pages, 561453 bytes)
+.
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
- 14 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
