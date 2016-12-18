@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.5)  18 DEC 2016 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.5)  18 DEC 2016 19:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -497,11 +497,11 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<9_3_2.pdf, id=1, 870.25125pt x 502.87875pt>
+<9_3_2.pdf, id=1, 913.4125pt x 541.02126pt>
 File: 9_3_2.pdf Graphic file (type pdf)
  <use 9_3_2.pdf>
 Package pdftex.def Info: 9_3_2.pdf used on input line 28.
-(pdftex.def)             Requested size: 304.5925pt x 176.0102pt.
+(pdftex.def)             Requested size: 319.69916pt x 189.36028pt.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 39.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
@@ -537,7 +537,7 @@ nts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti12.pfb>
-Output written on G-1-A-09-Goettsch_Hoelzen_Schmidt.pdf (2 pages, 195002 bytes)
+Output written on G-1-A-09-Goettsch_Hoelzen_Schmidt.pdf (2 pages, 199425 bytes)
 .
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
