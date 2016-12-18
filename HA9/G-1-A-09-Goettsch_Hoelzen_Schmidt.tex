@@ -33,6 +33,35 @@ Als \"Uberdeckungsgraph zu \(N_{9.3}\) f\"ur die Anfangsmarkierung \(m_0=(2,1,0)
 
 
 \section*{Aufgabe 9.4}
+\subsection*{1.}
+\begin{tabular}{ | c | c c c c c c | c | c | c |}
+	\hline
+	$\Delta_{N_{LS}}$ & $t_1$ & $t_2$ & $t_3$ & $t_4$ & $t_5$ & $t_6$ & \hspace*{10pt} & $i_1$ & $i_2$\\
+	\hline
+	$pa$ & -1 & 0 & 1 & -1 & 0 & 1 & & 1 & 0\\
+	$pp$ & 0 & -1 & 1 & 0 & -4 & 4 & & 0 & 1\\
+	$p_1$ & 1 & -1 & 0 & 0 & 0 & 0 & & 1 & 0\\
+	$p_2$ & 0 & 1 & -1 & 0 & 0 & 0 & & 1 & 1\\
+	$p_3$ & 0 & 0 & 0 & 1 & -1 & 0 & & 1 & 0\\
+	$p_4$ & 0 & 0 & 0 & 0 & 1 & -1 & & 1 & 4\\
+	\hline
+	& & & & & &\\ \cline{1-7}
+	$j_1$ & 1 & 1 & 1 & 1 & 1 & 1\\
+	$j_2$ & 0 & 0 & 0 & 1 & 1 & 1\\
+	\cline{1-7}
+\end{tabular}
+\\
+
+Rechnungen:\\
+\begin{align*}
+\Delta i_1 &= \Delta_{N_{LS}} \cdot \begin{pmatrix}1 \\ 0 \\ 1 \\ 1 \\ 1 \\ 1\end{pmatrix} = 
+\begin{pmatrix}-1+1 \\ -1 \cdot 0-1+1\\ 1+1 \cdot 0-1 \\ -1+1 \\ -4 \cdot 0-1+1 \\ 1+4 \cdot 0-1\end{pmatrix} = 
+\begin{pmatrix}0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0\end{pmatrix}
+\\
+\Delta i_2 &= \Delta_{N_{LS}} \cdot \begin{pmatrix}0 \\ 1 \\ 0 \\ 1 \\ 0 \\ 4\end{pmatrix} = 
+%\begin{pmatrix}0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0\end{pmatrix} =
+\begin{pmatrix}0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0\end{pmatrix}
+\end{align*}
 
 \section*{Aufgabe 9.5}
 	\begin{itemize}

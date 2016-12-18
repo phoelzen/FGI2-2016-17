@@ -82,5 +82,44 @@ in der Markierung $m_{1}=p_{1}(0),p_{2}(3),p_{3}(0)$ ist die Transition $d$ akti
 
 
 \section*{Aufgabe 8.5}
+\subsection*{1.}
+Das in Abbildung 7 gezeigte Netz simuliert eine Lieferung per Drohne. Dabei stellt die Transition $t_1$ die Bestellung dar, die in Form von Marken festgehalten werden. Von Transition $t_2$ werden diese Marken entfernt (Abholung) und auf den nächsten Platz gelegt. Der nächste Schritt ist die Auslieferung des Pakets. Dies wird durch eine Entfernung einer Marke aus dem Drohnen Lager und eines abgeholten Pakets durch Transition $t_3$ simuliert. Das Entfernen der Marke vom letzten Platz durch Transition $t_4$, modelliert den Rückflug der Drohne. Im Lager entsteht entsprechend eine neue Marke.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.8]{8-5-1.pdf}
+	\caption{Erste Simulation}
+\end{figure}
+
+\subsection*{2.}
+?
+
+\subsection*{3.}
+In diesem Netz ist die Anzahl der Marken im Drohnen Lager auf 5 beschränkt.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.8]{8-5-3.pdf}
+	\caption{Erste Simulation}
+\end{figure}
+
+\subsection*{4.}
+Die Transition $t_5$ markiert defekte Drohnen als auszutauschend, $t_6$ legt eine neue Marke auf das Drohnen Lager, die eine intakte Drohne symbolisiert. Die Kapazität wird hierbei nicht überschritten, es kann jedoch der Fall auftreten, dass alle Drohnen defekt sind und keine Lieferung ausgetragen werden kann.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.8]{8-5-4.pdf}
+	\caption{Erste Simulation}
+\end{figure}
+
+\newpage
+\subsection*{5.}
+Die Transition $t_7$ bzw. die von ihr generierten Marken modellieren einen Abholauftrag. Eine Drohne kann mit $t_8$ zu einem Kunden fliegen und anschließend, indem durch Transition $t_9$ die Drohne mitsamt der Retour vom Platz entfernt werden, zurück zum Lager fliegen.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.8]{8-5-5.pdf}
+	\caption{Erste Simulation}
+\end{figure}
 
 \end{document}
