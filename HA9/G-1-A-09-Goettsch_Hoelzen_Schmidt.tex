@@ -21,6 +21,7 @@
 \section*{9.3}
 
 \subsection*{1.}
+
 \subsection*{2.}
 Als \"Uberdeckungsgraph zu \(N_{9.3}\) f\"ur die Anfangsmarkierung \(m_0=(2,1,0)^t\) ergibt sich:
 \begin{figure}[h!]
@@ -34,6 +35,7 @@ Als \"Uberdeckungsgraph zu \(N_{9.3}\) f\"ur die Anfangsmarkierung \(m_0=(2,1,0)
 
 \section*{Aufgabe 9.4}
 \subsection*{1.}
+\begin{center}
 \begin{tabular}{ | c | c c c c c c | c | c | c |}
 	\hline
 	$\Delta_{N_{LS}}$ & $t_1$ & $t_2$ & $t_3$ & $t_4$ & $t_5$ & $t_6$ & \hspace*{10pt} & $i_1$ & $i_2$\\
@@ -50,9 +52,10 @@ Als \"Uberdeckungsgraph zu \(N_{9.3}\) f\"ur die Anfangsmarkierung \(m_0=(2,1,0)
 	$j_2$ & 0 & 0 & 0 & 1 & 1 & 1\\
 	\cline{1-7}
 \end{tabular}
-\\
+\end{center}
 
-Rechnungen:\\
+
+P-Invarianten:\\
 \begin{align*}
 \Delta i_1 &= \Delta_{N_{LS}} \cdot \begin{pmatrix}1 \\ 0 \\ 1 \\ 1 \\ 1 \\ 1\end{pmatrix} = 
 \begin{pmatrix}-1+1 \\ -1 \cdot 0-1+1\\ 1+1 \cdot 0-1 \\ -1+1 \\ -4 \cdot 0-1+1 \\ 1+4 \cdot 0-1\end{pmatrix} = 
@@ -63,6 +66,7 @@ Rechnungen:\\
 \begin{pmatrix}0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0\end{pmatrix}
 \end{align*}
 
+T-Invarianten:\\
 \begin{align*}
 \Delta j_1 &= \Delta_{N_{LS}} \cdot \begin{pmatrix}1 \\ 1 \\ 1 \\ 1 \\ 1 \\ 1\end{pmatrix} = 
 \begin{pmatrix}-1+1-1+1 \\ -1+1-4+4 \\ 1-1 \\ 1-1 \\ 1-1 \\ 1-1\end{pmatrix} = 
@@ -74,7 +78,8 @@ Rechnungen:\\
 \end{align*}
 
 \subsection*{2.}
-\begin{tabular}{ | c | c c c c c c | c | c | c |}
+\begin{center}
+\begin{tabular}{ | c | c c c c c c |}
 	\hline
 	$\Delta_{N_{Drohne}}$ & $t_1$ & $t_2$ & $t_3$ & $t_4$ & $t_5$ & $t_6$\\
 	\hline
@@ -86,9 +91,39 @@ Rechnungen:\\
 	$p_6$ & 0 & -1 & 0 & 0 & 1 & 0\\
 	$p_7$ & 0 & 0 & 0 & 1 & -1 & 0\\
 	$p_8$ & 0 & 0 & 0 & 0 & 1 & -1\\
-	\hline
+	\hline	
 \end{tabular}
-\\
+\end{center}
+
+
+\subsection*{3.}
+Die Menge aller S-Invariantenvektoren ist die Menge der Vektoren $i^{tr} = (i_0 ... i_7)$, die das folgende Gleichungssystem lösen:\\
+
+\begin{align*}
+&I) &-i_0 + i_1 - i_4 &= 0\\
+&II) &-i_1 + i_2 - i_5 &= 0\\
+&III) &-i_2 + i_3 &= 0\\
+&IV) &-i_3 + i_6 &= 0\\
+&V) &i_5 - i_6 + i_7 &= 0\\
+&VI) &i_0 + i_4 - i_7 &= 0\\
+\end{align*}
+
+\subsection*{5.}
+\begin{center}
+\begin{tabular}{ | c | c c c c c c c |}
+	\hline
+	$\Delta_{N_{Drohne}}$ & $t_1$ & $t_2$ & $t_3$ & $t_4$ & $t_5$ & $t_6$ & $t_7$\\
+	\hline
+	$p_1$ & -1 & 0 & 0 & 0 & 0 & 1 & 0\\
+	$p_2$ & 1 & -1 & 0 & 0 & 0 & 0 & 0\\
+	$p_3$ & 0 & 1 & -1 & 0 & 0 & 0 & 0\\
+	$p_4$ & 0 & 0 & 1 & -1 & 0 & 0 & 0\\
+	$p_5$ & -1 & 0 & 0 & 0 & 0 & 0 & 1\\
+	$p_6$ & 0 & -1 & 0 & 0 & 1 & 0 & 0\\
+	$p_7$ & 0 & 0 & 0 & 1 & -1 & 0 & 0\\
+	\hline	
+\end{tabular}
+\end{center}
 
 \section*{Aufgabe 9.5}
 	\begin{itemize}
