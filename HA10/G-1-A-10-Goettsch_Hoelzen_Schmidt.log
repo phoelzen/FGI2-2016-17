@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.5)  4 JAN 2017 16:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.4.5)  4 JAN 2017 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -404,7 +404,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 LaTeX Warning: Unused global option(s):
     [paper=a4].
 
-No file G-1-A-10-Goettsch_Hoelzen_Schmidt.aux.
+(./G-1-A-10-Goettsch_Hoelzen_Schmidt.aux)
 \openout1 = `G-1-A-10-Goettsch_Hoelzen_Schmidt.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -420,6 +420,7 @@ LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 \c@lstlisting=\count109
+
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
@@ -525,13 +526,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2] [3] (./G-1-A-10-Goettsch_Hoelzen_Schmidt.aux) ) 
 Here is how much of TeX's memory you used:
- 4559 strings out of 493089
- 60864 string characters out of 6134843
+ 4561 strings out of 493089
+ 60940 string characters out of 6134843
  141991 words of memory out of 5000000
  7965 multiletter control sequences out of 15000+600000
  13438 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,14n,43p,398b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,14n,43p,431b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf
@@ -545,7 +546,7 @@ type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb>
-Output written on G-1-A-10-Goettsch_Hoelzen_Schmidt.pdf (3 pages, 111111 bytes)
+Output written on G-1-A-10-Goettsch_Hoelzen_Schmidt.pdf (3 pages, 112241 bytes)
 .
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
