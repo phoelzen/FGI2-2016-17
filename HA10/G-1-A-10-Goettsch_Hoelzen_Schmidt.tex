@@ -84,10 +84,38 @@ Somit bleibt der Siphon auch in allen aus \(m_0\) erreichbaren Markierungen unma
 
 \subsection*{2.}
 \subsection*{3.}
+Die Markierung $m_0 = (0,0,0,0,0,0,1,0)^{tr}$ ist eine Startmarkierung minimaler Markenzahl, in der alle Transitionen potentiell aktivierbar sind. Dabei aktiviert folgender Pfad alle Transitionen:\\
 
+\begin{align*}
+\begin{pmatrix} 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 1 \\ 0 \end{pmatrix} \underrightarrow{t_5}
+\begin{pmatrix} 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 1 \\ 0 \\ 1 \end{pmatrix} \underrightarrow{t_6}
+\begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \\ 1 \\ 1 \\ 0 \\ 0 \end{pmatrix} \underrightarrow{t_1}
+\begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \\ 0 \\ 1 \\ 0 \\ 0 \end{pmatrix} \underrightarrow{t_2}
+\begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \end{pmatrix} \underrightarrow{t_3}
+\begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \\ 0 \\ 0 \\ 0 \\ 0 \end{pmatrix} \underrightarrow{t_4}
+\begin{pmatrix} 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 0 \\ 1 \\ 0 \end{pmatrix}
+\end{align*}
 
 \section*{Aufgabe 10.5}
 \subsection*{1.}
+
+Das Netz in Abbildung 1 ist das durch Transitions-Faltung entstandene, gefärbte Netz $N_{10.5}$. Dabei sind die Guards der Transitionen:\\
+
+\begin{itemize}
+\item $t_1$ : $(x=c \land z=e+f) \lor (x=d \land z=e+f)$
+\item $t_2$ : $(x=c \land y=a \land z=e+f) \lor (x=d \land y=b \land z=e+f)$\\
+			$\rightarrow$ Ausgehend davon, dass ein Kind immer im selben Bett schläft
+\item $t_3$ : $(x=c \land y=a \land s=s) \lor (x=d \land y=b \land s=s)$
+\item $t_4$ : $(x=c \land s=s) \lor (x=d \land s=s)$
+\end{itemize}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{folded.pdf}
+\caption{gefärbtes Netz $N_{10.5}$}
+
+\end{figure}
+
 \subsection*{2.}
 \subsection*{3.}
 
