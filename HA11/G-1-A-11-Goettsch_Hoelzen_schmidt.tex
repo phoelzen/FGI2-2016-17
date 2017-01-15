@@ -21,12 +21,26 @@
 
 \section*{Aufgabe 11.3}
 \subsection*{1.}
+P/T-Netz siehe Abbildung 1.\\
 
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.7]{EnterprisePT.pdf}
 \caption{PT-Netz mit virtuellen Plätzen zum $TS_{Enterprise}$ aus Aufgabe 5.3}
 \end{figure}
+
+\subsection*{2.}
+Formel: $f = AF(\not(orbit \Rightarrow away) \land \not AG(E(orbit U warp)))$\\
+Lola-Syntax: \texttt{FORMULA ALLPATH EVENTUALLY (NOT (NOT orbit > 0 OR away > 0)) AND NOT ALLPATH ALWAYS (EXPATH [ orbit > 0 UNTIL warp > 0 ])}\\
+Ergebnis: true\\
+
+Formel: $g_1 = AGEF(warp)$\\
+Lola-Syntax: \texttt{FORMULA ALLPATH ALWAYS EXPATH EVENTUALLY warp > 0}\\
+Ergebnis: true\\
+
+Formel: $g_2 = EFAG(warp)$\\
+Lola-Syntax: \texttt{FORMULA EXPATH EVENTUALLY ALLPATH ALWAYS warp > 0}\\
+Ergebnis: false\\
 
 \section*{Aufgabe 11.5}
 \begin{itemize}
