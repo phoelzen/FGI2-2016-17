@@ -42,6 +42,30 @@ Formel: $g_2 = EFAG(warp)$\\
 Lola-Syntax: \texttt{FORMULA EXPATH EVENTUALLY ALLPATH ALWAYS warp > 0}\\
 Ergebnis: false\\
 
+\subsection*{3.}
+Formel: $AF(orbit \land EX(away))$\\
+Lola-Syntax: \texttt{FORMULA ALLPATH EVENTUALLY (orbit > 0 AND EXPATH NEXTSTEP away > 0)}\\
+Ergebnis: true\\
+Sprachlich: Für alle Pfade, wenn irgendwann $orbit$ gilt, gibt es einen Pfad in dessen nächstem Schritt $away$ gilt.\\
+
+Formel: $EF(shields)$\\
+Lola-Syntax: \texttt{FORMULA EXPATH EVENTUALLY shields > 0}\\
+Ergebnis: true\\
+Sprachlich: Es gibt einen Pfad für den irgendwann mal $shields$ gilt.\\
+
+Formel: $EF(warp \land shields)$\\
+Lola-Syntax: \texttt{FORMULA EXPATH EVENTUALLY (warp > 0 AND shields > 0)}\\
+Ergebnis: false\\
+Sprachlich: Es gibt einen Pfad in dem irgendwann mal gleichzeitig $warp$ und $shields$ gelten.\\
+
+Formel: $AF(away \land EX(warp))$\\
+Lola-Syntax: \texttt{FORMULA ALLPATH EVENTUALLY (away > 0 AND EXPATH NEXTSTEP warp > 0)}\\
+Ergebnis: false\\
+Sprachlich: Für alle Pfade gilt irgendwann $away$ und es gibt dann einen Pfad in dessen nächsten Schritt $warp$ gilt.\\
+
+\subsection*{4.}
+In der Lola GUI in Renew wird eine Checkliste einiger statischer Netzeigenschaften angezeigt. Darunter auch Beschränktheit (Boundedness), Lebendigkeit (Liveness) und Reversibilität (Reversibility). Alle drei Eigenschaften werden vom Netz erfüllt.\\
+
 \section*{Aufgabe 11.5}
 \begin{itemize}
 	\item Ein mehrfach gezeichneter Endzustand bezeichnet immer nur ein einziges Objekt. \\
