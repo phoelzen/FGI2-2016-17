@@ -1,0 +1,59 @@
+\documentclass[12pt, paper=a4]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+\setlength{\parindent}{0pt}
+
+\author{Mareike G\"ottsch, 6695217, Gruppe 2\\Paul H\"olzen, 6673477, Gruppe 1\\Sven Schmidt, 6217064, Gruppe 1}
+
+\title{FGI 2 Hausaufgaben 12}
+
+\rhead{M. G\"ottsch, G-2; P. H\"olzen, G-1; S. Schmidt, G-1}
+\pagestyle{fancy}
+\begin{document}
+\maketitle
+
+\section*{Aufgabe 12.3}
+\subsection*{1.}
+\begin{center}
+\begin{tabular}{ c c | c c c c l }
+	\multicolumn{2}{l|}{ba(b(a+b)c+ba(b+c))} &  \multicolumn{4}{c}{(b+b)(ab(ac+bc)+ab(ab+ac))} \\
+		\multicolumn{2}{c|}{$\downarrow$b} & \multicolumn{4}{c}{ $\downarrow$b $\downarrow$b}\\
+	\multicolumn{2}{l|}{a(b(a+b)c+ba(b+c))} & \multicolumn{4}{c}{ab(ac+bc)+ab(ab+ac)}\\
+		\multicolumn{2}{c|}{$\downarrow$a} & \multicolumn{2}{c}{ $\downarrow$a} &&\multicolumn{2}{c}{ $\downarrow$a}\\
+	\multicolumn{2}{l|}{b(a+b)c+ba(b+c)} & \multicolumn{2}{c}{b(ac+bc)} && \multicolumn{2}{c}{b(ab+ac)} \\
+		$\downarrow$b & $\downarrow$b & \multicolumn{2}{c}{ $\downarrow$b} &&\multicolumn{2}{c}{ $\downarrow$b}\\
+	(a+b)c & a(b+c) & \multicolumn{2}{c}{ac+bc} && \multicolumn{2}{c}{ab+ac} \\
+		$\downarrow$a $\downarrow$b & $\downarrow$a & $\downarrow$a & $\downarrow$b & & $\downarrow$a & $\downarrow$a\\
+	c & b+c & c & c & & b & c\\
+		$\downarrow$c & $\downarrow$b $\downarrow$c & $\downarrow$c & $\downarrow$c & & $\downarrow$b & $\downarrow$c\\
+	$\surd$ & $\surd$ & $\surd$ & $\surd$ & & $\surd$ & $\surd$\\
+\end{tabular}
+\end{center}
+
+
+\subsection*{2.}
+Es ist c$\overleftrightarrow{\underline{\quad}}$c, (b+c)$\overleftrightarrow{\underline{\quad}}$b und (b+c)$\overleftrightarrow{\underline{\quad}}$c. Damit ist auch (a+b)c $\overleftrightarrow{\underline{\quad}}$ac+bc und a(b+c)$\overleftrightarrow{\underline{\quad}}$ab+ac sowie b(a+b)c+ba(b+c)$\overleftrightarrow{\underline{\quad}}$b(ac+bc) und b(a+b)c+ba(b+c)$\overleftrightarrow{\underline{\quad}}$b(ab+ac). Damit gilt auch a(b(a+b)c+ba(b+c))$\overleftrightarrow{\underline{\quad}}$ab(ac+bc)+ab(ab+ac) und somit schlie{\ss}lich $t_3\overleftrightarrow{\underline{\quad}}t_4$.
+
+\subsection*{3.}
+Ja, s.o..
+\subsection*{4.}
+
+%fehlt noch
+
+\section*{12.6}
+	\begin{itemize}
+	\item Der ACP-Kalk\"ul mit gesch\"utzter Rekursion ist korrekt bez\"uglich Bisimulation, aber nicht vollst\"andig.\\
+		Wahr oder falsch?\\
+		\textit{(Lesestoff Woche 12)}
+	\item Die Kommunikationsfunktion $\gamma$ ist weder kommutativ noch assoziativ.\\
+		Wahr oder falsch?\\
+		\textit{(Lesestoff Woche 12)}
+	\end{itemize}
+\end{document}
