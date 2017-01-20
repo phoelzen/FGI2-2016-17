@@ -7,6 +7,7 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
+\usepackage{extarrows}
 
 \setlength{\parindent}{0pt}
 
@@ -44,8 +45,56 @@ Es ist c$\overleftrightarrow{\underline{\quad}}$c, (b+c)$\overleftrightarrow{\un
 \subsection*{3.}
 Ja, s.o..
 \subsection*{4.}
-
 %fehlt noch
+
+\section*{12.4}
+
+\subsection*{1.}
+\rule{1cm}{1pt} \(A_0, \sigma_1\)\\
+\(a \xlongrightarrow{\text{a}} \surd\)\\
+\rule{2.5cm}{1pt} \(T_{+L}^\surd, \sigma_2\)\\
+\((b+a) \xlongrightarrow{\text{a}} \surd\)\\
+\rule{5cm}{1pt} \(T_{\bullet}^\surd, \sigma_3\)\\
+\((b+a)(cd+d) \xlongrightarrow{\text{a}} (cd+d)\)\\
+\rule{5.5cm}{1pt} \(T_{\bullet}, \sigma_4\)\\
+\((b+a)(cd+d)b \xlongrightarrow{\text{a}} (cd+d)b\)\\
+\rule{8.5cm}{1pt} \(T_{+L}, \sigma_5\)\\
+\((da+(a+b)c)+(b+a)(cd+d)b \xlongrightarrow{\text{a}} (cd+d)b\)\\
+\rule{11.5cm}{1pt} \(T_{+R}, \sigma_6\)\\
+\((da+(a+b)c)+(b+a)(cd+d)b+(a(c+d)+b) \xlongrightarrow{\text{a}} (cd+d)b\)\\
+
+\(\sigma_1: v \mapsto a\)\\
+\(\sigma_2: v \mapsto a; y \mapsto a; x \mapsto b\)\\
+\(\sigma_3: v \mapsto a; x \mapsto (b+a); y \mapsto (cd+d)\)\\
+\(\sigma_4: v \mapsto a; x \mapsto (b+a)(cd+d); x' \mapsto (cd+d); y \mapsto b\)\\
+\(\sigma_5: v \mapsto a; y \mapsto (b+a)(cd+d)b; y' \mapsto (cd+d)b; x \mapsto (da+(a+b)c)\)\\
+\(\sigma_6: v \mapsto a; x \mapsto (da+(a+b)c)+(b+a)(cd+d)b; x' \mapsto (cd+d)b; \\ y \mapsto (a(c+d)+b)\)\\
+
+\subsection*{2.}
+\(t_7 = (\underline{b+b})((ab)(ac+bc)+a((ab+ac)b))\\
+\xrightarrow{\text{R3}} b((ab)(ac+bc)+a(\underline{(ab+ac)b)})\\
+\xrightarrow{\text{R4}} b(\underline{(ab)(ac+bc)}+a(abb+acb))\\
+\xrightarrow{\text{R5}} b(a(\underline{b(ac+bc)})+a(abb+acb))\\
+\xrightarrow{\text{R4}} b(\underline{a(bac+bbc)}+\underline{a(abb+acb)})\\
+\xrightarrow{\text{R4}} \underline{b(abac+abbc+aabb+aacb)}\\
+\xrightarrow{\text{R4}} babac+babbc+baabb+baacb\\
+\)
+
+\subsection*{3.}
+\(t_8=b(a(a(cb)+a(bb))+a((\underline{b(b+a)})c))
+\xrightarrow{\text{R4}} b(a(acb+abb)+a(\underline{(bb+ba)c}))\\
+\xrightarrow{\text{R4}} b(\underline{a(acb+abb)}+\underline{a(bbc+bac)})\\
+\xrightarrow{\text{R4}} \underline{b(aacb+aabb+abbc+abac)}\\
+\xrightarrow{\text{R4}} \underline{baacb+baabb+babbc+babac}\\
+\xrightarrow{\text{R1}} babac+babbc+baabb+baacb\\
+\)
+
+\(t_7\) und \(t_8\) sind \"aquivalent, da sie auf gleiche Normalformen gebracht werden k\"onnen und sie somit nach Satz 9.17 \"aquivalent sind.
+
+\section*{12.5}
+
+
+
 
 \section*{12.6}
 	\begin{itemize}
